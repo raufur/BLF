@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.epsilon.coders.blf.CheckBalance">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Today’s Cash Collection Position"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/cash_date_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"
+            android:text="Cash Collection as on 20-02-2016" />
+
+
+        <TableLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/k"
+            android:shrinkColumns="1"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:background="@color/Saffron"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Collection" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="     Shift" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Amount (BDT)" />
+            </TableRow>
+
+            <TableRow android:background="@color/Lavender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Bangladesh Lions\nFoundation" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Morning" />
+
+                <TextView
+                    android:id="@+id/tv_cash_blf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="00000.00" />
+            </TableRow>
+
+            <TableRow android:background="@color/clearBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:text="Lions Eye Institute\n And Hospital"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Evening" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="0000.00" />
+            </TableRow>
+
+            <TableRow android:background="@color/canvasBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Lions Eye Institute\n And Hospital" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Morning" />
+
+                <TextView
+                    android:id="@+id/tv_cash_morning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="0000000" />
+            </TableRow>
+
+            <TableRow android:background="@color/clearBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:text="Lions Eye Institute\n And Hospital" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Evening" />
+
+                <TextView
+                    android:id="@+id/tv_cash_ecening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="0000000" />
+            </TableRow>
+
+            <TableRow android:background="@color/Eggplant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/AshGray"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:text="TOTAL"
+
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_cash_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="0000000" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Today’s BankBalance Position"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/bank_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:gravity="center"
+                android:text="Bank Balance  as on 20-02-2016" />
+
+
+        </TableLayout>
+
+        <TableLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/k"
+            android:shrinkColumns="1"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:background="@color/Saffron"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Title of Account" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="    A/C No." />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Amount (BDT)" />
+            </TableRow>
+
+            <TableRow android:background="@color/Lavender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Bangladesh Lions\nFoundation" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="SIBL-190" />
+
+                <TextView
+                    android:id="@+id/bank_190"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="0000000" />
+            </TableRow>
+
+
+            <TableRow android:background="@color/clearBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Lions Eye Institute\n And Hospital" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="SIBL-261" />
+
+                <TextView
+                    android:id="@+id/bank_261"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="0000000" />
+            </TableRow>
+
+            <TableRow android:background="@color/Lavender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="BLF Multi complex\n And Dev. Fund" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="SIBL-351" />
+
+                <TextView
+                    android:id="@+id/bank_351"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="0000000" />
+            </TableRow>
+
+            <TableRow
+                android:background="@color/Eggplant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:background="@color/AshGray"
+                    android:text="TOTAL"
+
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/bank_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+
+                    android:text="0000000" />
+            </TableRow>
+
+
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+</RelativeLayout>
